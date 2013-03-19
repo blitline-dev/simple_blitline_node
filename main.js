@@ -7,7 +7,7 @@ var blitline = new Blitline();
 
 
 /* Replace MY_APP_ID with your Blitline application_id */
-var applicationId = "lD0Ca82KhEp-wybe-QjcqQ"; // "MY_APP_ID"
+var applicationId = "MY_APP_ID"; 
 
 /* The new recommended way to submit jobs to Blitline is via a simple json hash */
 

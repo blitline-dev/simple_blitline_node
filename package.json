@@ -5,7 +5,7 @@
   "version": "2.0.0",
   "repository": {
     "type" : "git",
-    "url": "https://github.com/blitline-dev/blitline_node"
+    "url": "https://github.com/blitline-dev/simple_blitline_node"
   },
   "main" : "index.js",
   "dependencies": {},
