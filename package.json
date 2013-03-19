@@ -1,0 +1,13 @@
+{
+  "author": "Blitline Developer <developer@blitline.com>",
+  "name": "simple_blitline_node",
+  "description": "Thin wrapper around the Blitline service. No rocket science here, just a helper wrapper",
+  "version": "2.0.0",
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/blitline-dev/blitline_node"
+  },
+  "main" : "index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
