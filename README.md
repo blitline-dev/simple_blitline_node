@@ -1,6 +1,6 @@
-Blitline_Node
+Simple Blitline_Node
 ========
-This is a thin wrapper around the blitline web service. Blitline provides a simple web based image processing service.
+This is a EVEN THINNER wrapper around the blitline web service. Blitline provides a simple web based image processing service.
 
 You must first have a Blitline.com account to successfully use the gem. You can obtain one (free and without obligation, not even an email address) by going to http://www.blitline.com
 
@@ -9,7 +9,7 @@ Once you have your account, you will need to find you ACCOUNT_ID which you can g
 
 For your node project, simply npm install it
 
-    $ npm install blitline
+    $ npm install simple_blitline_node
 
 Once installed, you can try the following code in your NodeJS app:
 
@@ -18,14 +18,25 @@ Once installed, you can try the following code in your NodeJS app:
     var Blitline = require('./lib/blitline');
 
     var blitline = new Blitline();
-    /* Replace MY_APP_ID with your Blitline application_id */
-    var job = blitline.addJob("MY_APP_ID", "http://www.google.com/intl/en_com/images/srpr/logo3w.png");
-    /* Add a blur function to the image */
-    var blur_function = job.addFunction("blur", null, "my_blurred_image");
-    /* Once blurred, add a sepia filter to the image */
-    var sepia_function = blur_function.addFunction("sepia_tone", null, "my_blurred_sepia_toned_image");
-    /* Once blurred, crop to 50x50 */
-    var crop_function = sepia_function.addFunction("resize_to_fill", { width: 50, height: 50}, "my_sepia_tone_blurred_cropped_image");
+    
+    /* Replace MY_APP_ID with your Blitline applicationID */
+    var applicationID = "MY_APP_ID";
+
+    blitline.addJob({
+        "application_id": applicationID,
+        "src":"http://cdn.blitline.com/filters/boys.jpeg",
+        "functions":[
+            {
+                "name":"resize_to_fit",
+                "params":{
+                    "width":100
+                },
+                "save":{
+                    "image_identifier":"MY_CLIENT_ID"
+                }
+            }
+        ]
+    });
 
     blitline.postJobs(function(response) {
       console.log(response);
