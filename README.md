@@ -1,7 +1,7 @@
 simple_blitline_node
 ====================
 
-This is a EVEN THINNER wrapper around the blitline web service. Blitline provides a simple web based image processing service.
+This is a EVEN THINNER wrapper around the Blitline.com web service. Blitline provides a web based image processing service.
 
 You must first have a Blitline.com account to successfully use the gem. You can obtain one (free and without obligation, not even an email address) by going to http://www.blitline.com
 
