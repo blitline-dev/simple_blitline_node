@@ -16,7 +16,7 @@ Once installed, you can try the following code in your NodeJS app:
 
 ```javascript
 
-    var Blitline = require('./lib/blitline');
+    var Blitline = require('simple_blitline_node');
 
     var blitline = new Blitline();
     
