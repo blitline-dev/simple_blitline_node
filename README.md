@@ -17,7 +17,7 @@ Once installed, you can try the following code in your NodeJS app:
 ```javascript
 
     var Blitline = require('simple_blitline_node');
-
+    var nodeutil = require('util');
     var blitline = new Blitline();
     
     /* Replace MY_APP_ID with your Blitline applicationID */
@@ -40,7 +40,7 @@ Once installed, you can try the following code in your NodeJS app:
     });
 
     blitline.postJobs(function(response) {
-      console.log(response);
+        console.log(nodeutil.inspect(response, { depth:10, colors: true }));
     });
 
 ```
