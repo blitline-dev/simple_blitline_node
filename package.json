@@ -4,10 +4,12 @@
   "description": "Thin wrapper around the Blitline service. No rocket science here, just a helper wrapper",
   "version": "2.0.1",
   "repository": {
-    "type" : "git",
+    "type": "git",
     "url": "https://github.com/blitline-dev/simple_blitline_node"
   },
-  "main" : "index.js",
-  "dependencies": {},
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.0.2"
+  },
   "devDependencies": {}
 }
