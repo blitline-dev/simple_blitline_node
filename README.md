@@ -39,8 +39,9 @@ Once installed, you can try the following code in your NodeJS app:
         ]
     });
 
-    blitline.postJobs(function(response) {
-        console.log(nodeutil.inspect(response, { depth:10, colors: true }));
+    var promise = blitline.postJobs();
+    promise.then(function(data) {
+        console.log(data);
     });
 
 ```
