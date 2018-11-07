@@ -57,6 +57,8 @@ Further reading:
 * (Quickstart)[http://www.blitline.com/docs/quickstart]
 * (Blitline Blog)[http://blitline.tumblr.com]
 
+== Licensing
+* (BSD 0-Clause License)[https://tldrlegal.com/license/bsd-0-clause-license]
 
 == Contributing to blitline
 
